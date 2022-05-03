@@ -33,16 +33,30 @@
       .form-container {
         display: grid;
         grid-template-rows: auto 1fr auto;
+        padding-left: 8px;
+        padding-right: 8px;
       }
-      .form {
-        display: flex;
-        flex-direction: column;
-      }
+
       .logo {
         width: 150px;
         margin-bottom: 48px;
         justify-self: center;
         display: none;
+      }
+      .email-logo {
+        display: grid;
+        place-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: var(--text-input-field);
+        border-radius: 50%;
+        justify-self: center;
+        z-index: 4;
+        margin-bottom: 40px;
+      }
+      .email-logo img {
+        width: 132px;
+        z-index: 5;
       }
       .title {
         text-align: center;
@@ -51,22 +65,22 @@
       .subtitle {
         color: var(--very-light-pink);
         text-align: center;
-        font-size: var(--md);
+        font-size: var(--lg);
         font-weight: 300;
         margin-top: 0;
         margin-bottom: 32px;
       }
-      .label {
+      .footer-text {
+        color: var(--very-light-pink);
+        text-align: center;
         font-size: var(--sm);
         font-weight: bold;
-        margin-bottom: 4px;
       }
-      .input {
-        background-color: var(--text-input-field);
-        border: none;
-        height: 32px;
-        border-radius: 5px;
-        margin-bottom: 8px;
+      .footer-text span {
+        color: var(--dark);
+      }
+      .footer-text a {
+        color: var(--hospital-green);
       }
       .primary-button {
         border: none;
@@ -77,9 +91,10 @@
         background-color: var(--hospital-green);
         border-radius: 5px;
         height: 60px;
+        width: 100%;
       }
       .login-button {
-        margin-top: 16px;
+        margin-top: 40px;
       }
       body {
         font-family: 'Quicksand', sans-serif;
@@ -101,29 +116,19 @@
           alt="logo"
           class="logo"
         />
-        <h1 class="title">Create a new password</h1>
-        <p class="subtitle">Enter a new password for your account</p>
-        <form action="/" class="form">
-          <label for="password" class="label">Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="*********"
-            class="input input-password"
-          />
+        <h1 class="title">Email has been send</h1>
+        <p class="subtitle">
+          Please check your inbox for intructions on how to rest the password
+        </p>
 
-          <label for="new-password" class="label">Re-enter password</label>
-          <input
-            type="password"
-            id="new-password"
-            placeholder="*********"
-            class="input input-password"
-          />
+        <div class="email-logo">
+          <img src="./Platzi_YardSale_Icons/email.svg" alt="email-logo" />
+        </div>
+        <button type="submit" class="primary-button login-button">Login</button>
 
-          <button type="submit" class="primary-button login-button">
-            Confirm
-          </button>
-        </form>
+        <p class="footer-text">
+          <span>Didn't receive the email?</span> <a href="">Resend</a>
+        </p>
       </div>
     </div>
   </body>
