@@ -84,6 +84,12 @@
       .login-button {
         margin-top: 16px;
       }
+      .footer-text {
+        color: var(--hospital-green);
+        text-align: center;
+        font-size: var(--sm);
+        font-weight: bold;
+      }
       body {
         font-family: 'Quicksand', sans-serif;
         margin: 0;
@@ -104,9 +110,17 @@
           alt="logo"
           class="logo"
         />
-        <h1 class="title">Create a new password</h1>
-        <p class="subtitle">Enter a new password for your account</p>
+        <!-- <h1 class="title">Create a new password</h1>
+        <p class="subtitle">Enter a new password for your account</p> -->
         <form action="/" class="form">
+          <label for="email" class="label">Email address</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="something@example.com"
+            class="input input-email"
+          />
+
           <label for="password" class="label">Password</label>
           <input
             type="password"
@@ -115,17 +129,10 @@
             class="input input-password"
           />
 
-          <label for="new-password" class="label">Re-enter password</label>
-          <input
-            type="password"
-            id="new-password"
-            placeholder="*********"
-            class="input input-password"
-          />
-
           <button type="submit" class="primary-button login-button">
-            Confirm
+            Login
           </button>
+          <p class="footer-text">Forgot my password</p>
         </form>
       </div>
     </div>
