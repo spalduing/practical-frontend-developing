@@ -30,7 +30,7 @@
             padding-left: 8px;
             padding-right: 8px;
         }
-
+        
         .view-container {
             width: 100%;
             height: 100vh;
@@ -48,6 +48,7 @@
             justify-content: space-between;
             position: relative;
             margin-top: 0px;
+            margin-left: 0px;
         }
 
         .form-container {
@@ -70,21 +71,19 @@
             margin-bottom: 4px;
         }
 
-        .input {
-            background-color: var(--text-input-field);
-            border-radius: 5px;
-            border: none;
-            height: 32px;
+        .value {
+            color: var(--very-light-pink);
+            font-size: var(--md);
             margin-bottom: 8px;
         }
 
-        .primary-button {
-            border: none;
-            color: white;
+        .seccondary-button {
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
             cursor: pointer;
             font-size: var(--md);
             font-weight: bold;
-            background-color: var(--hospital-green);
+            background-color: var(--white);
             border-radius: 5px;
             height: 60px;
         }
@@ -109,6 +108,7 @@
 
 <body>
     <div class="account">
+        
         <nav class="nav-bar">
             <button class="side-browser">
                 <img src="./Platzi_YardSale_Icons/icon_menu.svg"></img>
@@ -124,16 +124,16 @@
                 <h1 class="title">My account</h1>
 
                 <label for="name" class="label">Name</label>
-                <input id="name" class="input" type="text" placeholder="Miguel">
+                <p id="name" class="value" type="text">Miguel</p>
 
                 <label for="email" class="label">Email address</label>
-                <input id="email" class="input" type="email" placeholder="mdiaz@gmail.com">
+                <p id="email" class="value" type="email">mdiaz@gmail.com</p>
 
                 <label for="password" class="label">Password</label>
-                <input id="password" class="input" type="password" placeholder="********">
+                <p id="password" class="value" type="password" >********</p>
 
-                <button type="submit" class="primary-button edit-button">
-                    Create
+                <button type="submit" class="seccondary-button edit-button">
+                    Eddit
                 </button>
             </div>
         </div>
