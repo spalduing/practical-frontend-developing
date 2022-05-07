@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --primary: #2ecc71;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+
+        .home {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .menu {
+            border: 1px solid var(--shadow);
+            width: 100%;
+            height: 30px;
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            margin-top: 0px;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            margin: 48px 12px 12px 12px;
+
+        }
+
+        .search-bar {
+            width: 100%;
+
+        }
+
+        .search-bar input {
+            border: none;
+            border-radius: 4px;
+            background-color: var(--text-input-field);
+            width: 100%;
+            height: 32px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 28px;
+            place-content: center;
+        }
+
+        .product-card {
+            width: 240px;
+        }
+
+        .product-img {
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+   
+        }
+
+        .product-info figure {
+            margin-right: 1px;
+        }
+
+        .cost {
+            font-size: var(--lg);
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        .product-name {
+            margin-top: 4px;
+            color: var(--very-light-pink);
+            font-size: var(--md);
+
+        }
+
+        @media (max-width: 634px) {
+                .cards-container {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, 140px);
+                    gap: 28px;
+                    place-content: center;
+                }
+
+            .product-card {
+                width: 140px;
+            }
+
+            .product-img {
+                width: 140px;
+                height: 140px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <menu class="menu">
+            <button class="side-browser">
+                <img src="./Platzi_YardSale_Icons/icon_menu.svg"></img>
+            </button>
+            <img src="./Platzi_YardSale_Logos/logo_yard_sale.svg" <button class="shopping-cart">
+            <img src="./Platzi_YardSale_Icons/icon_shopping_cart_notification.svg"></img>
+            </button>
+        </menu>
+        <section class="main-container">
+            <div class="search-bar">
+                <input type="text" placeholder="search product">
+            </div>
+            <carr <div class="cards-container">
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bicycle" class="product-img" />
+                    <div class="product-info">
+                        <div class="item-product-info">
+                            <p class="cost">$120.00</p>
+                            <p class="product-name">Classic bicycle</p>
+                        </div>
+                        <figure>
+
+                            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping-card-button" />
+                        </figure>
+                    </div>
+                </div>
+    </div>
+    </section>
+    </div>
+</body>
+
+</html>
